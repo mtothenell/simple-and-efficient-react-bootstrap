@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Item from './components/Item';
 
 const App = () => {
-    const numberOfItems = 5;
+    const numberOfItems = 1;
 
     return (
         <div className="d-flex flex-column min-vh-100">
@@ -21,7 +21,7 @@ const App = () => {
                 </Row>
             </Container>
 
-            <Footer />
+            {/*<Footer />*/}
         </div>
     );
 };

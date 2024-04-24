@@ -5,13 +5,13 @@ const ResponsiveNavbar = (): React.ReactElement => {
     return (
         <Navbar bg="primary" variant="dark" collapseOnSelect expand="sm">
             <Container>
-                <Navbar.Brand href="/">Example Site</Navbar.Brand>
+                <Navbar.Brand href="/">Rönnas svensexa</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbar-toggle" />
                 <Navbar.Collapse id="navbar-toggle">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
-                        <NavDropdown title="Drop-down" id="nav-dropdown">
+                        <Nav.Link href="#home">Text1</Nav.Link>
+                        <Nav.Link href="#link">Text2</Nav.Link>
+                        <NavDropdown title="Text3" id="nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
