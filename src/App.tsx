@@ -13,6 +13,11 @@ const App = () => {
 
             <Container className="mt-5">
                 <Row>
+                    <Col>
+                        <p>Välkommen till Rönnas Svensexa!</p>
+                    </Col>
+                </Row>
+                <Row>
                     {Array.from(Array(numberOfItems).keys()).map(number => (
                         <Col key={number}>
                             <Item></Item>
