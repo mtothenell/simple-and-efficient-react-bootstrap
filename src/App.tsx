@@ -3,8 +3,6 @@ import {
     ChakraProvider,
     Box,
     Text,
-    VStack,
-    Grid,
     theme,
     Image
 } from "@chakra-ui/react"
@@ -24,7 +22,7 @@ export const App = () => (
                 "Creating stylish, functional, and custom made applications"
             </Text>
             <Text>
-                mtothenell@gmail.com
+                Contact Ola Magnell at mtothenell@gmail.com
             </Text>
         </Box>
 
