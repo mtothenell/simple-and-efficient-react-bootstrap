@@ -12,16 +12,22 @@ import mangoDesign from './md1.png';
 
 export const App = () => (
     <ChakraProvider theme={theme}>
-        <Box textAlign="center" fontSize="xl">
-            <Grid minH="100vh" p={3}>
-                <VStack spacing={0}>
-                    <Image src={mangoDesign} alt="Mango design"></Image>
-                    <Text>
-                        Snyggt. Anpassat. Säkert.
-                    </Text>
-                </VStack>
-            </Grid>
+
+        <Box display="flex"
+             flexDirection="column"
+             justifyContent="center"
+             alignItems="center"
+             height="100vh"
+        >
+            <Image src={mangoDesign} alt="Mango design" mb={0}></Image>
+            <Text>
+                "Creating stylish, functional, and custom made applications"
+            </Text>
+            <Text>
+                mtothenell@gmail.com
+            </Text>
         </Box>
+
     </ChakraProvider>
 );
 
