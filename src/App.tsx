@@ -1,35 +1,29 @@
-import './App.scss';
-import { Button, Container, Navbar, NavDropdown, Nav, Col, Row } from 'react-bootstrap';
-import ResponsiveNavbar from './components/ResponsiveNavbar';
-import Footer from './components/Footer';
-import Item from './components/Item';
+import * as React from "react"
+import {
+    ChakraProvider,
+    Box,
+    Text,
+    VStack,
+    Grid,
+    theme,
+    Image
+} from "@chakra-ui/react"
+import mangoDesign from './md1.png';
 
-const App = () => {
-    const numberOfItems = 1;
+export const App = () => (
+    <ChakraProvider theme={theme}>
+        <Box textAlign="center" fontSize="xl">
+            <Grid minH="100vh" p={3}>
+                <VStack spacing={0}>
+                    <Image src={mangoDesign} alt="Mango design"></Image>
+                    <Text>
+                        Snyggt. Anpassat. Säkert.
+                    </Text>
+                </VStack>
+            </Grid>
+        </Box>
+    </ChakraProvider>
+);
 
-    return (
-        <div className="d-flex flex-column min-vh-100">
-            <ResponsiveNavbar />
-
-            <Container className="mt-5">
-                <Row>
-                    <Col>
-                        <p>Välkommen till Rönnas Svensexa!</p>
-                    </Col>
-                </Row>
-                <Row>
-                    {Array.from(Array(numberOfItems).keys()).map(number => (
-                        <Col key={number}>
-                            <Item></Item>
-                        </Col>
-                    ))}
-                </Row>
-            </Container>
-
-            {/*<Footer />*/}
-        </div>
-    );
-};
-
-//{/* <ResponsiveNavbar /> */}
 export default App;
+
