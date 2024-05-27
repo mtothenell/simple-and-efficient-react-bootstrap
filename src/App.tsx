@@ -4,28 +4,26 @@ import {
     Box,
     Text,
     theme,
-    Image, Divider, Link
+    Image, Divider, Link, Grid, GridItem
 } from "@chakra-ui/react"
 import mangoDesign from './md1.png';
 
+const height = 100/3;
 export const App = () => (
-    <ChakraProvider theme={theme}>
 
-            <Box display="flex"
-                 flexDirection="column"
-                 justifyContent="center"
-                 alignItems="center"
-                 height="100vh"
-                 width="100%"
-                 textAlign="center"
-            >
-                <Divider orientation="horizontal" height="10px" width="100vh" bg="black"/>
+
+
+    <ChakraProvider theme={theme}>
+        <Grid templateRows='repeat(54 1fr)' gap={0}>
+            <GridItem w='100%' h={`${height}vh`} bg='grey' />
+            <GridItem w='100%' h={`${height}vh`} bg='white'>
                 <Image src={mangoDesign} alt="Mango design" mb={0}></Image>
                 <Link href="mailto:mtothenell@gmail.com">
                     Making stylish, functional, and secure applications.
                 </Link>
-                <Divider orientation="horizontal" height="10px" width="100vh" bg="black"/>
-            </Box>
+            </GridItem>
+            <GridItem w='100%' h={`${height}vh`} bg='grey' />
+        </Grid>
     </ChakraProvider>
 );
 
